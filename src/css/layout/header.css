@@ -1,0 +1,29 @@
+.header {
+    background-color: var(--design--1);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
+    padding: 0 var(--space);
+}
+
+.header__logo,
+.header__menu-btn {
+    display: flex;
+}
+
+.header__logo {
+    align-items: center;
+}
+
+.header__menu-btn{
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+}

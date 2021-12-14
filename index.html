@@ -1,83 +1,121 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
 
-    <header>
-        <a href="/"><img src="public/icon/Logo.svg" alt="Logo du site"></a>
-        <button><img src="public/icon/Menu.svg" alt="Icone de menu"></button>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="article1.html">Les Suffragettes, prêtes à tout pour voter</a></li>
-                <li><a href="article2.html">Gisèle Halimi, une féministe née</a></li>
-                <li><a href="article3.html">L'histoire du féminisme</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="autres_projets.html">Autres projets</a></li>
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3>Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3>Les Suffragettes, prêtes à tout pour voter</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3>Gisèle Halimi, une féministe née</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3>L'histoire du féminisme</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie.html"><h3>Galerie</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets.html"><h3>Autres projets</h3></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Feminism Great Battles</h1>
-        <p>Le féminisme, un combat permanent</p>
-        <button>Swipe <br> <img src="public/icon/Swipe.svg" alt="Icone de Swipe"></button>
+
+        <div class="hero container">
+            <div class="hero__header">
+                <h1 class="hero__title title"><span class="title__redLetter">F</span>eminism <span class="title__redLetter">G</span>reat <span class="title__redLetter">B</span>attles</h1>
+                <p class="hero__tagline">Le féminisme, un combat permanent</p>
+            </div>
+            
+            <a class="hero__swipe" href="#repere">Swipe</a>
+            <a href="#repere">
+                <div class="hero__line"></div>
+            </a>
+            <div class="hero__visual visual">
+                <div class="visual__rectangle1"></div>
+                <div class="visual__rectangle2"></div>
+                <div class="visual__rectangle3"></div>
+                <div class="visual__rectangle4"></div>
+                <div class="visual__rectangle5"></div>
+                <div class="visual__rectangle6"></div>
+                <div class="visual__rectangle7"></div>
+                <div class="visual__rectangle8"></div>
+            </div>
+            <div id="repere" class="hero__repere"></div>
+        </div>
+
         <p>Retracer l’histoire du féminisme à travers les grandes batailles menées par les femmes pour obtenir leurs droits. Découvrez les grandes figures du féminisme telles que les Suffragettes ou Gisèle Halimi.</p>
 
-        <article>
+        <article class="article">
             <a href="article1.html">
-                <h2>Les Suffragettes, prêtes à tout pour voter</h2>
-               <img src="public/img/tweet_1.webp" alt="Des Suffragettes militent dans la rue">
-               <p>Découvrez l’histoire des Suffragettes, ces femmes qui se sont battues pour obtenir le droit de vote au Royaume-Uni.                             
-                   En savoir plus
+                <h2 class="article__title">Les Suffragettes, prêtes à tout pour voter</h2>
+               <img class="article__img" src="public/img/tweet_1.webp" alt="Des Suffragettes militent dans la rue">
+               <p class="article__resume resume">Découvrez l’histoire des Suffragettes, ces femmes qui se sont battues pour obtenir le droit de vote au Royaume-Uni.                             
+                   <span class="resume__more">En savoir plus</span>
                    </p>
            </a>
         </article>
         
-        <article>
+        <article class="article">
             <a href="article2.html">
-                <h2>Gisèle Halimi, une féministe née</h2>
-                <img src="public/img/tweet_2.webp" alt="Gisèle Halimi">
-                <p>Apprenez-en plus sur la vie de l’avocate française, figure du féminisme moderne qui a lutté pour le droit à l’avortement.
-                    En savoir plus                    
+                <h2 class="article__title">Gisèle Halimi, une féministe née</h2>
+                <img class="article__img" src="public/img/tweet_2.webp" alt="Gisèle Halimi">
+                <p class="article__resume resume">Apprenez-en plus sur la vie de l’avocate française, figure du féminisme moderne qui a lutté pour le droit à l’avortement.
+                    <span class="resume__more">En savoir plus</span>                    
                     </p>
             </a>
         </article>
 
-        <article>
+        <article class="article">
             <a href="article3.html">
-                <h2>L'histoire du féminisme</h2>
-                <img src="public/img/tweet_3.webp" alt="Illustration de la couverture du livre Femmes, actrices de l'histoire France, de 1789 à nos jours">
-                <p>L’histoire du féminisme, de son origine jusqu’à notre époque grâce au livre Les femmes, actrices de l’histoire France, de 1789 à nos jours.
-                    En savoir plus
+                <h2 class="article__title">L'histoire du féminisme</h2>
+                <img class="article__img" src="public/img/tweet_3.webp" alt="Illustration de la couverture du livre Femmes, actrices de l'histoire France, de 1789 à nos jours">
+                <p class="article__resume">L’histoire du féminisme, de son origine jusqu’à notre époque grâce au livre Les femmes, actrices de l’histoire France, de 1789 à nos jours.
+                    <span class="resume__more">En savoir plus</span>
                     </p>
             </a>
         </article>
 
     </main>
 
-    <footer>
-        <h3>Feminism Great Battles</h3>
-        <h4>Menu</h4>
-        <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire.html">Glossaire</a></li>
         </ul>
-        <p>Hugo RODRIGUES C1 <br>
-            Me contacter par mail : <a href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Me contacter par mail : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
         </p>
-        <h4>Réseaux</h4>
-        <ul>
+        <h4 class="footer__sub-title">Réseaux</h4>
+        <ul class="footer__list listUnstyled">
             <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
             <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
             <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__mmi" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
         
     </footer>
     

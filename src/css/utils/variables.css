@@ -1,0 +1,35 @@
+:root {
+/* Color styles */
+--design--1: rgba(99, 0, 0, 1);
+--design--2: rgba(138, 24, 24, 1);
+--design--3: rgba(182, 79, 92, 1);
+--design--4: rgba(255, 195, 176, 1);
+--grey--1: rgba(29, 26, 24, 1);
+--grey--2: rgba(73, 71, 69, 1);
+--grey--3: rgba(124, 124, 124, 1);
+--grey--4: rgba(218, 218, 218, 1);
+--grey--5: rgba(246, 246, 246, 1);
+--system--1: rgba(68, 203, 74, 1);
+--system--2: rgba(237, 71, 71, 1);
+
+/* Text-size styles */
+/* base size: button (16px) */
+--t: 3.75rem;
+--h1: 2.12rem;
+--h2: 1.56rem;
+--h3: 1.12rem;
+--b: 0.88rem;
+--button: 1rem;
+--st: 0.69rem;
+
+/* Fonts */
+--font-serif: 'Scope One';
+--font-sans-serif: 'Sen';
+--font-sans-serif2: 'Roboto';
+
+/* Spaces */
+--space: 28px;
+--space--s: 10px;
+--space--l: 50px;
+--space--xl: 100px;
+}

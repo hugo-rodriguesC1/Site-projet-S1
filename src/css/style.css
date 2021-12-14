@@ -1,0 +1,28 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&family=Scope+One&family=Sen:wght@400;700&display=swap');
+
+/*Utils*/
+
+@import url(utils/variables.css);
+
+/*Vendors*/
+
+@import url(vendors/normalize.css);
+
+/*Base*/
+
+@import url(base/main.css);
+@import url(base/media.css);
+
+/*Layout*/
+
+@import url(layout/footer.css);
+@import url(layout/header.css);
+
+/*Components*/
+
+@import url(components/menu.css);
+@import url(components/hero.css);
+@import url(components/visual.css);
+@import url(components/article.css);

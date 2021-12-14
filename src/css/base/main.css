@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    font-size: var(--b);
+    background-color: var(--grey--5);
+    color: var(--grey--1);
+}
+
+h1, h2 {
+    font-family: var(--font-serif);
+    padding: 0 var(--space);
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+    font-family: var(--font-serif);
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey--1);
+}
+
+main {
+    padding-top: var(--space--xl);
+}
+
+
+main p {
+    padding: 0 var(--space);
+}
+
+.listUnstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+

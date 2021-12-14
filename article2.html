@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+
 </head>
 <body>
 
-    <header>
-        <a href="/"><img src="public/icon/Logo.svg" alt="Logo du site"></a>
-        <button><img src="public/icon/Menu.svg" alt="Icone de menu"></button>
-        <nav>
-            <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="article1.html">Les Suffragettes, prêtes à tout pour voter</a></li>
-                <li><a href="article2.html">Gisèle Halimi, une féministe née</a></li>
-                <li><a href="article3.html">L'histoire du féminisme</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="autres_projets.html">Autres projets</a></li>
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html">Les Suffragettes, prêtes à tout pour voter</a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html">Gisèle Halimi, une féministe née</a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html">L'histoire du féminisme</a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie.html">Galerie</a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
             </ul>
         </nav>
     </header>
@@ -51,23 +60,23 @@
         </article>
     </main>
 
-    <footer>
-        <h3>Feminism Great Battles</h3>
-        <h4>Menu</h4>
-        <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="glossaire.html">Glossaire</a></li>
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire.html">Glossaire</a></li>
         </ul>
-            <p>Hugo RODRIGUES C1 <br>
-                Me contacter par mail : <a href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
-            </p>
-            <h4>Réseaux</h4>
-            <ul>
-                <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
-                <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
-                <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
-            </ul>
-            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Me contacter par mail : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        </p>
+        <h4 class="footer__sub-title">Réseaux</h4>
+        <ul class="footer__list listUnstyled">
+            <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
+        </ul>
+        <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__mmi" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
         
     </footer>
     
