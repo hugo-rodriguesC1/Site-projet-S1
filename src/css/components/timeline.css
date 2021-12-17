@@ -1,0 +1,23 @@
+.timeline {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: calc(0px - var(--space--l));
+    margin-right: calc(0px - var(--space));
+    margin-bottom: 10%;
+}
+
+.timeline__img img {
+    max-width: none;
+    width: 875vw;
+    display: block;
+}
+
+.timeline::-webkit-scrollbar {
+    height: 4px;
+    background-color: var(--grey--4);
+
+}
+  
+.timeline::-webkit-scrollbar-thumb {
+    background-color: var(--design--3);
+}

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeminismGreatBattles</title>
     <link rel="stylesheet" href="src/css/style.css">
-
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
 
@@ -16,36 +16,49 @@
             <img src="public/icon/Logo.svg" alt="Logo du site">
         </a>
         
-        <button class="header__menu-btn menu-btn">
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
             <span class="menu-btn__bar"></span>
         </button>
 
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
-                <li class="menu__item"><a class="menu__link" href="article1.html">Les Suffragettes, prêtes à tout pour voter</a></li>
-                <li class="menu__item"><a class="menu__link" href="article2.html">Gisèle Halimi, une féministe née</a></li>
-                <li class="menu__item"><a class="menu__link" href="article3.html">L'histoire du féminisme</a></li>
-                <li class="menu__item"><a class="menu__link" href="galerie.html">Galerie</a></li>
-                <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Les Suffragettes, prêtes à tout pour voter</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Gisèle Halimi, une féministe née</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L'histoire du féminisme</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie.html"><h3 class="menu__sub-title">Galerie</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets.html"><h3 class="menu__sub-title">Autres projets</h3></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Glossaire</h1>
-        <h2>Culture du viol</h2>
-        <dfn>Concept sociologique regroupant l’ensemble des actions et pensées qui minimisent, normalisent voire encouragent le viol.</dfn>
-        <h2>Féminisme</h2>
-        <dfn>Ensemble des actions, idées, mouvements réclamant l’égalité entre les hommes et les femmes.</dfn>
-        <h2>Féminisme intersectionnel</h2>
-        <dfn>Féminisme qui prend en compte toutes les formes de discrimination que peuvent subir les femmes, dans leur individualité.</dfn>
-        <h2>Loi Veil</h2>
-        <dfn>Loi dépénalisant l’avortement en France préparée par Simone Veil et adoptée le 17 janvier 1975.</dfn>
-        <h2>Suffragettes</h2>
-        <dfn>Femmes qui ont milité pour le droit de vote. D’abord originaires du Royaume-Uni, Le mouvement se répand ensuite en Europe</dfn>
-        <h2>Women’s lib</h2>
-        <dfn>Abréviation du Women’s Liberation Movement, mouvement américain protestant contre le sexisme et les discriminations et réclamant l’égalité des droits entre les hommes et les femmes.</dfn>
+        <div class="glossaire">
+            <h1 class="glossaire__title pageTitle">Glossaire</h1>
+            <div class="visual__title"></div>
+            <dl class="glossaire__defs defs">
+                <dt class="defs__term">Culture du viol</dt>
+                <dd class="defs__desc">Concept sociologique regroupant l’ensemble des actions et pensées qui minimisent, normalisent voire encouragent le viol.</dd>
+                <dt class="defs__term">Féminisme</dt>
+                <dd class="defs__desc">Ensemble des actions, idées, mouvements réclamant l’égalité entre les hommes et les femmes.</dd>
+                <dt class="defs__term">Féminisme intersectionnel</dt>
+                <dd class="defs__desc">Féminisme qui prend en compte toutes les formes de discrimination que peuvent subir les femmes, dans leur individualité.</dd>
+                <dt class="defs__term">Loi Veil</dt>
+                <dd class="defs__desc">Loi dépénalisant l’avortement en France préparée par Simone Veil et adoptée le 17 janvier 1975.</dd>
+                <dt class="defs__term">Suffragettes</dt>
+                <dd class="defs__desc">Femmes qui ont milité pour le droit de vote. D’abord originaires du Royaume-Uni, Le mouvement se répand ensuite en Europe</dd>
+                <dt class="defs__term">Women’s lib</dt>
+                <dd class="defs__desc">Abréviation du Women’s Liberation Movement, mouvement américain protestant contre le sexisme et les discriminations et réclamant l’égalité des droits entre les hommes et les femmes.</dd>
+            </dl>
+        </div>
     </main>
 
     <footer class="footer">

@@ -1,8 +1,10 @@
 .footer {
+    min-width: 100%;
     background-color: var(--grey--1);
     color: var(--grey--5);
     padding: 0 var(--space);
     padding: 34px 34px;
+    margin-top: 30%;
     font-family: var(--font-sans-serif2);
     font-weight: 300;
     font-size: var(--st);

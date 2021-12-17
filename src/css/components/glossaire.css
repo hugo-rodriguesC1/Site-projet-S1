@@ -1,0 +1,21 @@
+.glossaire {
+    margin: 0 var(--space);
+}
+
+.defs,
+.defs__term,
+.defs__desc {
+    padding: 0%;
+    margin: 0%;
+}
+
+.defs__term {
+    font: 500 var(--h2) var(--font-serif);
+    margin-bottom: 1%;
+}
+
+.defs__desc {
+    font: var(--b) var(--font-sans-serif);
+    margin-bottom: 10%;
+}
+

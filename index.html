@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuOpen: false}">
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,17 +30,17 @@
                 </a>
             </div>
             <ul class="menu__list listUnstyled">
-                <li class="menu__item"><a class="menu__link" href="/"><h3>Accueil</h3></a></li>
-                <li class="menu__item"><a class="menu__link" href="article1.html"><h3>Les Suffragettes, prêtes à tout pour voter</h3></a></li>
-                <li class="menu__item"><a class="menu__link" href="article2.html"><h3>Gisèle Halimi, une féministe née</h3></a></li>
-                <li class="menu__item"><a class="menu__link" href="article3.html"><h3>L'histoire du féminisme</h3></a></li>
-                <li class="menu__item"><a class="menu__link" href="galerie.html"><h3>Galerie</h3></a></li>
-                <li class="menu__item"><a class="menu__link" href="autres_projets.html"><h3>Autres projets</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Les Suffragettes, prêtes à tout pour voter</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Gisèle Halimi, une féministe née</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L'histoire du féminisme</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie.html"><h3 class="menu__sub-title">Galerie</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets.html"><h3 class="menu__sub-title">Autres projets</h3></a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main >
 
         <div class="hero container">
             <div class="hero__header">

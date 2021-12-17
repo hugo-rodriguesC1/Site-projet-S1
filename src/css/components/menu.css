@@ -25,12 +25,24 @@
   margin-top: 6vh;
 }
 
+
+
+.menu__sub-title {
+  color: var(--grey--3);
+}
+
 .menu__item::after {
   content: "";
   background-color: var(--grey--1);
-  width: 88vw;
+  width: 86vw;
   height: 1px;
   position: absolute;
+}
+
+.menu__item:nth-last-child(-n+2)::after {
+  content: "";
+  background-color: var(--grey--3);
+  width: 75%;
 }
 
 .menu-btn {

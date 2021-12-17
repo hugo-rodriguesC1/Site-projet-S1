@@ -87,3 +87,12 @@
     z-index: -1;
     opacity: 0.5;
 }
+
+.visual__title {
+    width: 9.3vw;
+    height: 15.15vh;
+    background-color: var(--design--4);
+    position: absolute;
+    top: 12.3vh;
+    left: 84.53vw;
+}

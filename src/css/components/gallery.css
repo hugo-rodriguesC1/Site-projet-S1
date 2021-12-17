@@ -1,0 +1,35 @@
+.gallery {
+    margin: 0 var(--space);
+}
+
+.gallery__item {
+    display: flex;
+    margin-bottom: 15%;
+    gap: 2%;
+}
+
+.gallery__bio {
+    margin: 0%;
+    padding: 0%;
+    font: lighter var(--st) var(--font-sans-serif2);
+}
+
+.gallery__img {
+    flex: 1;
+    max-width: 100%;
+    padding-top: 3%;
+}
+
+.gallery__text {
+    flex: 2;
+}
+
+.gallery__figure {
+    font-size: var(--b);
+    margin: 6% 0 3%;
+}
+
+
+
+
+
