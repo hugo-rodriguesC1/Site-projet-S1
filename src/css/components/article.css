@@ -1,8 +1,12 @@
 .article {
     display: flex;
+    transition: all 0.3s ease;
 }
 
 .article__title {
+    display: flex;
+    flex-direction:column;
+    align-self:flex-end;
     text-align: center;
     font-weight: 500;
     padding-top: 40px;
@@ -32,12 +36,16 @@
 
 .article__img {
     width: 89%;
+    height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
 }
 
 .resume__more {
     text-decoration: underline;
 }
 
+article:hover {
+    transform: scale(1.1);
+}
