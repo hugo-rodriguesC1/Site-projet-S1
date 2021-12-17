@@ -6,6 +6,9 @@
     display: flex;
     margin-bottom: 15%;
     gap: 2%;
+    margin-left: calc(0px - var(--space--s));
+    margin-right: calc(0px - var(--space--s));
+    position: relative;
 }
 
 .gallery__bio {
@@ -29,6 +32,24 @@
     margin: 6% 0 3%;
 }
 
+.gallery__figure::before {
+    content: "";
+    width: 59vw;
+    height: 1px;
+    background-color: var(--grey--1);
+    position: absolute;
+    top: 8px;
+}
+
+.gallery__figure::after {
+    content: "";
+    width: 59vw;
+    height: 1px;
+    background-color: var(--grey--1);
+    position: absolute;
+    left: 31.4vw;
+    top: 17.98vh;
+}
 
 
 
