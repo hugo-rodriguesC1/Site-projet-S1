@@ -1,0 +1,17 @@
+.form__title {
+    font: var(--font-sans-serif2) uppercase;
+    font-size: var(--st);
+    margin-bottom: 0;
+}
+
+.form__input {
+    width: 85.3vw;
+    height: 3.7vh;
+    border-color: var(--design--3);
+    border-width: 1px;
+}
+
+.form__input:nth-child(8) {
+    height: 11.3vh;
+}
+

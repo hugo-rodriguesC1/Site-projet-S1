@@ -1,0 +1,12 @@
+.contact {
+    margin: 0 var(--space)
+}
+
+.contact__subTitle {
+    padding-left: 0;
+}
+
+.contact div + h2 {
+    margin-top: 15%;
+}
+

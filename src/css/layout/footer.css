@@ -3,7 +3,7 @@
     background-color: var(--grey--1);
     color: var(--grey--5);
     padding: 0 var(--space);
-    padding: 34px 34px;
+    padding: 4.187vh 9.067vw;
     margin-top: 30%;
     font-family: var(--font-sans-serif2);
     font-weight: 300;
@@ -17,6 +17,10 @@
     font-weight: 300;
     font-size: var(--st);
     text-transform: uppercase ;
+}
+
+.footer ul li {
+    margin-bottom: 2%;
 }
 
 .footer__title {
