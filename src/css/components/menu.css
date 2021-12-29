@@ -8,7 +8,7 @@
   position: fixed;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  background-color: var(--design--4);
+  background-color: #ffd4c5;
   transition: all .4s ease-in-out;
   }
 
@@ -87,3 +87,46 @@
   transform: rotate(90deg);
   top: 0;
   }
+
+.menu__language {
+  width: 32.53vw;
+  height: 5.42vh;
+  position: absolute;
+  z-index: 10;
+  top: 91.13vh;
+  left: 33.6vw;
+  border: 1px solid var(--grey--1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 300 var(--h3) var(--font-serif);
+  text-transform: uppercase;
+}
+
+.language__fr, 
+.language__en {
+  width: 16vw;
+  height: 5.20vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 8%;
+}
+
+.language__fr{
+  position: relative;
+}
+
+.language__fr::after {
+  content: "";
+  width: 1px;
+  height: 5.25vh;
+  background-color: var(--grey--1);
+  position: absolute;
+  top: 0px;
+  left: 16vw;
+}
+
+.language__fr--activated {
+  background-color: var(--design--4);
+}
+
