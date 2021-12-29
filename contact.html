@@ -48,15 +48,15 @@
             <p class="contact__intro intro"><strong>Je suis Hugo RODRIGUES, je suis en première année de BUT Métiers du multimédia et de l’internet à Montbéliard et j’ai réalisé ce site dans le cadre d’un projet portant sur le féminisme.</strong></p>
             <h2 class="contact__subTitle">Laisser un message <div class="visual__subTitle"></div></h2>
             <form action="" class="conact__form form">
-                <h4 class="form__title">NOM</h4>
-                <input type="text" class="form__input">
-                <h4 class="form__title">MAIL</h4>
-                <input type="email" class="form__input">
-                <h4 class="form__title">SUJET</h4>
-                <input type="text" class="form__input">
-                <h4 class="form__title">COMMENTAIRE</h4>
-                <input type="text" class="form__input">
-                <button class="form__button">Envoyer</button>
+                <label for="name" class="form__title">NOM</label>
+                <input type="text" id="name" class="form__input" placeholder="ex : Marie Durand">
+                <label for="mail" class="form__title">MAIL</label>
+                <input type="email" id="mail" class="form__input" placeholder="ex : marie.durand@gmail.com">
+                <label for="subject" class="form__title">SUJET</label>
+                <input type="text" id="subject" class="form__input" placeholder="Écrivez ici">
+                <label for="comment" class="form__title">COMMENTAIRE</label>
+                <textarea name="comment" id="comment" cols="30" rows="6" class="form__input" placeholder="Écrivez ici"></textarea>
+                <input type="button" class="form__button" value="Envoyer">
             </form>
         </div>
     </main>

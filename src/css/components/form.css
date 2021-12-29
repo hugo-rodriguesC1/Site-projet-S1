@@ -1,6 +1,8 @@
 .form__title {
     font: var(--font-sans-serif2) uppercase;
     font-size: var(--st);
+    font-weight: 300;
+    color: var(--grey--1);
     margin-bottom: 0;
 }
 
@@ -9,9 +11,25 @@
     height: 3.7vh;
     border-color: var(--design--3);
     border-width: 1px;
+    margin-bottom: 3%;
 }
 
 .form__input:nth-child(8) {
     height: 11.3vh;
+}
+
+.form__input:nth-child(8)::placeholder {
+    position: absolute;
+    top: 5%;
+}
+
+.form__button {
+    width: 40vw;
+    height: 3.7vh;
+    float: right;
+    border: none;
+    background-color: var(--design--2);
+    color: var(--grey--5);
+    text-transform: uppercase;
 }
 
