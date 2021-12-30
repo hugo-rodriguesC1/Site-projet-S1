@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="index_en.html"><h3 class="menu__title">Home</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1_en.html"><h3 class="menu__title">Suffragettes : to vote, whatever it takes</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2_en.html"><h3 class="menu__title">Gisèle Halimi, feminist since birth</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3_en.html"><h3 class="menu__title">The feminism history</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie_en.html"><h3 class="menu__sub-title">Gallery</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets_en.html"><h3 class="menu__sub-title">Other projects</h3></a></li>
+            </ul>
+            <a href="glossaire.html">
+                <div class="menu__language language">
+                    <div class="language__fr">fr</div>
+                    <div class="language__en  language__en--activated">en</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="glossaire">
+            <h1 class="glossaire__title pageTitle">Glossary</h1>
+            <div class="visual__title"></div>
+            <dl class="glossaire__defs defs">
+                <dt class="defs__term">Rape culture</dt>
+                <dd class="defs__desc">Social concept gathering all actions and thinks which minimize, normalize even encourage rape.</dd>
+                <dt class="defs__term">Feminism</dt>
+                <dd class="defs__desc">All actions, ideas, movement demanding equality between men and women.</dd>
+                <dt class="defs__term">Intersectional feminism</dt>
+                <dd class="defs__desc">Feminism which take into account all forms of discrimination that women can suffer from, in their individuality.</dd>
+                <dt class="defs__term">Law Veil</dt>
+                <dd class="defs__desc">Law decriminalizing abortion in France, prepared by Simone Veil and adopted on the 17th of january 1975.</dd>
+                <dt class="defs__term">Suffragettes</dt>
+                <dd class="defs__desc">Women who campaigned for the right of vote. First, from the United Kingdom, the movement spread next in Europe.</dd>
+                <dt class="defs__term">Women’s lib</dt>
+                <dd class="defs__desc">Abbreviation of Women’s Liberation Movement, american movement protesting against sexism and discriminations and demanding rights equality between me and women.</dd>
+            </dl>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact_en.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire_en.html">Glossary</a></li>
+        </ul>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Contact me : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        </p>
+        <h4 class="footer__sub-title">Social networks</h4>
+        <ul class="footer__list listUnstyled">
+            <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
+        </ul>
+        <p class="footer__mention">Project realised within the scope of an educational exercise in <a class="footer__mmi" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        
+    </footer>
+    
+</body>
+</html>

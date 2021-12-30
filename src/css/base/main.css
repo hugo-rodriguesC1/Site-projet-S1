@@ -68,5 +68,30 @@ main p {
     margin: 10% 0 0;
 }
 
+.text__readAlso {
+    font-weight: bold;
+}
+
+.text__legend {
+    color: var(--grey--2);
+    font-size: var(--st);
+    text-align: center;
+    margin-top: 1%;
+}
+
+.text__link {
+    text-decoration: underline;
+}
+
+.text__quote {
+    font-style: italic;
+    text-align: center;
+    margin: 0 var(--space);
+}
+
+.text__quoteAuthor {
+    margin-top: 1%;
+    
+}
 
 

@@ -126,7 +126,11 @@
   left: 16vw;
 }
 
-.language__fr--activated {
+.language__fr--activated,
+.language__en--activated {
   background-color: var(--design--4);
 }
+
+
+
 

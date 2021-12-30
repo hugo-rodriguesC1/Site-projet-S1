@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="index_en.html"><h3 class="menu__title">Home</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1_en.html"><h3 class="menu__title">Suffragettes : to vote, whatever it takes</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2_en.html"><h3 class="menu__title">Gisèle Halimi, feminist since birth</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3_en.html"><h3 class="menu__title">The feminism history</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie_en.html"><h3 class="menu__sub-title">Gallery</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets_en.html"><h3 class="menu__sub-title">Other projects</h3></a></li>
+            </ul>
+            <a href="article2.html">
+                <div class="menu__language language">
+                    <div class="language__fr">fr</div>
+                    <div class="language__en  language__en--activated">en</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1>Gisèle Halimi, feminist since birth</h1>
+            <div class="visual__title"></div>
+            <p><strong>Gisèle Halimi quickly became feminist. Indeed, her involvement in the movement appeared really early, during her childhood. 
+            </strong></p>
+            <img src="public/img/Gisèle_Halimi_en_1977.webp" alt="Photo de Gisèle Halimi en 1977">
+            <p class="text__legend">Gisèle Halimi in 1977</p>
+            <h2>Feminist childhood</h2>
+            <p>Zeiza Gisèle Élise Taïeb was born on July 27th 1927 in La Goulette in Tunisia. Her feminist comes from disappointments she encountered as a child.</p>
+            <p>In a book she wrote about her mother, she explains that her mother didn’t like her. It is the foundation of her approach “wanting that women don’t look like her mother”. Her father was so disappointed to have a girl that he waited weeks before saying it to his friends.</p>
+            <p>In this context, Gisèle Halimi revolted against the obligation to serve men and do housework with a hunger strike. She did another hunger strike to defend her right to read. She gets good results at school but her parents are indifferent to them, which increases her indignation.</p>
+            <h2>Justice carrer</h2>
+            <p>Gisèle Halimi studies in France, she gets a law degree and degree diploma in philosophy and finally becomes a lawyer. She began her career in Algerian defending for example the National Liberation Front in the fifties. She helped to cover the lawsuit of the activist Djamila Boupacha with the help of Simone de Beauvoir.</p>
+            <p>She signed up to Bar in Paris in 1956 and followed her lawyer career in France where she became a feminism figure.</p>
+            <blockquote class="text__quote">« Being a lawyer, for me, was a way to try to change what I didn't like in this world: injustice, ratio of power, disdain of humbles, scorn of women. »</blockquote>
+            <p class="text__quoteAuthor">- Gisèle Halimi</p>
+            <p>During the release of the manifesto of 343 in 1971, she was the only lawyer to sign it. This manifesto was signed by many women admitting to have an abortion and reclaiming a free acces to contraception methods.</p>
+            <p>With the help of Simone de Beauvoir, she creates the movement “Choose woman cause”, working for decriminalisation of abortion. This struggle for abortion right will become her main fight as lawyer and deputy.</p>
+            <h2>Important lawsuits</h2>
+            <p>During her several defenses as a lawyer, she allows some laws to evolve. In this way, when three women are accused of illegal abortion in 1972, Gisèle Halimi’s defense contributed tothe adoption of the law Veil on termination three years later. In 1978, she defended two women victims of an organised rape during a well mediatised lawsuit. Later, senator Brigitte Gros used many defense speeches from Gisèle Halimi concerning rape victims to propose a new law. In 1980, this law is adopted and rape is finally recongnise as a crime subject to 15 years in prison. These two events were adapted in movies: <a class="text__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=207839.html">"Le procès de Bobigny"</a> in 2006 and <a class="text__link" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=258404.html">"Le viol"</a> in 2017.</p>
+            <img src="public/img/Procès_de_Bobigny.webp" alt="Photo de Gisèle Halimi avec Marie-Claire Chevalier et sa mère lors de leur procès en novembre 1972.">
+            <p class="text__legend">Gisèle Halimi with Marie-Claire Chevalier and her mother during their lawsuit in november 1972.</p>
+            <p>From 1981, Gisèle Halimi began a political career, during which she continued to lead her fights. Until 1985, she sat in the national assembly. She also held many posts in UNESCO and ONU. She marked modern feminism history in France in the style of the Suffragettes at their time. Nowadays, several feminist associations, petitions but also minister of equality between women and men claim her entry in Pantheon. However, her engagement in the Algeria war could prevent this event.</p>
+            <p><span class="text__readAlso">Read also : </span><a class="text__link" href="article3.html">The feminism history</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact_en.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire_en.html">Glossary</a></li>
+        </ul>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Contact me : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        </p>
+        <h4 class="footer__sub-title">Social networks</h4>
+        <ul class="footer__list listUnstyled">
+            <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
+        </ul>
+        <p class="footer__mention">Project realised within the scope of an educational exercise in <a class="footer__mmi" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        
+    </footer>
+    
+</body>
+</html>

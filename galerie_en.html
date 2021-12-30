@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="index_en.html"><h3 class="menu__title">Home</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1_en.html"><h3 class="menu__title">Suffragettes : to vote, whatever it takes</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2_en.html"><h3 class="menu__title">Gisèle Halimi, feminist since birth</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3_en.html"><h3 class="menu__title">The feminism history</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie_en.html"><h3 class="menu__sub-title">Gallery</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets_en.html"><h3 class="menu__sub-title">Other projects</h3></a></li>
+            </ul>
+            <a href="galerie.html">
+                <div class="menu__language language">
+                    <div class="language__fr">fr</div>
+                    <div class="language__en  language__en--activated">en</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <h1 class="gallery__title pageTitle">Gallery</h1>
+            <div class="visual__title"></div>
+
+            <p class="gallery__intro intro"><strong>This gallery gathers several feminism figures through eras. The timeline marks waves of feminism movement and lists some important events.</strong></p>
+            
+            <div class="gallery__timeline timeline">
+                <div class="timeline__img"><img src="public/img/Frise_en.jpg" alt="Frise regroupant des évènements importants concernant le féminisme"></div>
+            </div>
+            
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/condorcet.webp" alt="Portrait de Nicolas de Condorcet"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Nicolas de CONDORCET (1743-1794)</h3>
+                    <p class="gallery__bio">It is one of the first defenders of equality between men and women, an idea he assures in one of his books. From 1790, he suggested in a news article, allowing women to vote.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/olympe.webp" alt="Portrait de Olympe de Gouges"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Olympe de GOUGES (1748-1793)</h3>
+                    <p class="gallery__bio">She was one of the first feminists. She wrote in 1791 the Declaration of Woman and Citizen Rights. She calls for a maternity system allowing women to give birth in better conditions but also to change religious weddings into civil contracts.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/sand.webp" alt="Portrait de George Sand"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">George SAND (1804-1876)</h3>
+                    <p class="gallery__bio">With her masculine clothing style and pseudonym, George Sand, Aurore Dupin, her real name, was a writer, novelist, and famous journalist. Some people talked a lot about her turbulent personal life. She was the first woman to live thanks to literature.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/auclert.webp" alt="Portrait de Hubertine Auclert"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Hubertine AUCLERT (1848-1914)</h3>
+                    <p class="gallery__bio">She was an activist for women's political rights in France. In 1880, she signed up on electoral lists whereas it is not allowed. She also defends language feminisation because for her “forgetting feminine in the dictionary contributes, more than we think, to forgetting feminine in Civil Code”. </p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/curie.webp" alt="Portrait de Marie Curie"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Marie CURIE (1867-1934)</h3>
+                    <p class="gallery__bio">Coming from Poland, Marie Curie went to France to join the Science University of Paris. Later, she became the first woman to get two Nobel prizes. Einstein told her “You are the best among women, and also among men !”. Nowadays, she still is considered as the greatest teacher-researcher of all time.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/baker.webp" alt="Portrait de Joséphine Baker"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Joséphine BAKER (1906-1975)</h3>
+                    <p class="gallery__bio">Freda Josépine McDonald, later called Joséphine Baker, the first international black celebrity, was a dancer, singer and review leader. She was resistant during the Second World War. Nowadays, she is considered as a figure of the struggle against racism and women emancipation.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/beauvoir.webp" alt="Portrait de Simone de Beauvoir"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Simone de BEAUVOIR (1908-1986)</h3>
+                    <p class="gallery__bio">Philosopher, novelist and french essayist, in 1949, she publishes her book “Le deuxième sexe” (The second sex) which causes controversy mentioning woman conditions and abortion, considered at the time like a crime. This book will be considered as the base of modern feminism.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/veil.webp" alt="Portrait de Simone Veil"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Simone VEIL (1927-2017)</h3>
+                    <p class="gallery__bio">She is an Auschwitz survivor, she studies right and political sciences. In 1974, at the time health minister in France, she made pass a law decriminalizating abortion, which will be commonly called “law Veil”.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/ruffalo.webp" alt="Portrait de Mark Ruffalo"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">Mark RUFFALO (1967)</h3>
+                    <p class="gallery__bio">The famous actor for the role of Hulk in movies calls himself feminist. He defends for example abortion right, which is threaten in some states of America. His mother had an illegal abortion, so in 2013, he wrote an open letter in which he reminds that this right is included in liberty of women to freely manage their body.</p>
+                </div>
+            </div>
+
+            <div class="gallery__item">
+                <div class="gallery__img"><img src="public/img/beyonce.webp" alt="Portrait de Beyonce"></div>
+                <div class="gallery__text">
+                    <h3 class="gallery__figure">BEYONCÉ (1981)</h3>
+                    <p class="gallery__bio">The international singer is now considered, despite some controversies, as a figure of modern feminism. With her songs “Run the world(girls)” or “Flawless”, the artist with many records defends feminism cause and women emancipation.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact_en.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire_en.html">Glossary</a></li>
+        </ul>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Contact me : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        </p>
+        <h4 class="footer__sub-title">Social networks</h4>
+        <ul class="footer__list listUnstyled">
+            <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
+        </ul>
+        <p class="footer__mention">Project realised within the scope of an educational exercise in <a class="footer__mmi" href="http://mmimontbeliard.com/">MMI department of Montbéliard</a></p>
+        
+    </footer>
+    
+</body>
+</html>
