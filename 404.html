@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeminismGreatBattles</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo" href="/">
+            <img src="public/icon/Logo.svg" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <div class="header">
+                <a class="header__logo" href="/">
+                    <img src="public/icon/Logo.svg" alt="Logo du site">
+                </a>
+            </div>
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Les Suffragettes, prêtes à tout pour voter</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Gisèle Halimi, une féministe née</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L'histoire du féminisme</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="galerie.html"><h3 class="menu__sub-title">Galerie</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="autres_projets.html"><h3 class="menu__sub-title">Autres projets</h3></a></li>
+            </ul>
+            <a href="index_en.html">
+                <div class="menu__language language">
+                    <div class="language__fr language__fr--activated">fr</div>
+                    <div class="language__en">en</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero container">
+            <div class="hero__header">
+                <h1 class="hero__title title">ERREUR 404</h1>
+                <p class="intro">Oups, vous êtes perdus, mais vous pouvez retrouvez les principaux articles disponibles ci-dessous.</p>
+            </div>
+            
+            <a class="hero__swipe" href="#repere">Swipe</a>
+            <a href="#repere">
+                <div class="hero__line"></div>
+            </a>
+            <div class="hero__visual visual">
+                <div class="visual__rectangle1"></div>
+                <div class="visual__rectangle2"></div>
+                <div class="visual__rectangle3"></div>
+                <div class="visual__rectangle4"></div>
+                <div class="visual__rectangle5"></div>
+                <div class="visual__rectangle6"></div>
+                <div class="visual__rectangle7"></div>
+                <div class="visual__rectangle8"></div>
+            </div>
+            <div id="repere" class="hero__repere"></div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__title">Feminism Great Battles</h3>
+        <h4 class="footer__sub-title">Menu</h4>
+        <ul class="listUnstyled">
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+            <li><a class="footer__link" href="glossaire.html">Glossaire</a></li>
+        </ul>
+        <p class="footer__contact">Hugo RODRIGUES C1 <br>
+            Me contacter par mail : <a class="footer__mail" href="mailto:rodrig.hugo90@gmail.com">rodrig.hugo90@gmail.com</a>
+        </p>
+        <h4 class="footer__sub-title">Réseaux</h4>
+        <ul class="footer__list listUnstyled">
+            <li><a href="#"><img src="public/icon/facebook.svg" alt="Logo Facebook"></a></li>
+            <li><a href="#"><img src="public/icon/instagram.svg" alt="Logo Instagram"></a></li>
+            <li><a href="#"><img src="public/icon/twitter.svg" alt="Logo Twitter"></a></li>
+        </ul>
+        <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer__mmi" href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+        
+    </footer>
+    
+</body>
+</html>
