@@ -94,4 +94,8 @@ main p {
     
 }
 
+.page404__intro {
+    margin: 0 var(--space);
+}
+
 
