@@ -96,6 +96,7 @@ main p {
 
 .page404__intro {
     margin: 0 var(--space);
+    font: 400 1.25rem;
 }
 
 
