@@ -23,6 +23,7 @@ h1, h2 {
 h1 {
     font-size: var(--h1);
     margin-right: 10vw;
+    margin-bottom: 10%;
 }
 
 h2 {
@@ -70,36 +71,9 @@ main p {
     margin: 10% 0 0;
 }
 
-.text__bold {
-    font-weight: bold;
-}
-
-.text__legend {
-    color: var(--grey--2);
-    font-size: var(--st);
-    text-align: center;
-    margin-top: 1%;
-}
-
-.text__link {
-    text-decoration: underline;
-}
-
-.text__quote {
-    font-style: italic;
-    text-align: center;
-    margin: 0 var(--space);
-}
-
-.text__quoteAuthor {
-    margin-top: 1%;
-    
-}
-
 .page404__intro {
     margin: 0 var(--space);
     font-weight: 400;
     font-size: 1.25rem;
 }
-
 
