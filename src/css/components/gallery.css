@@ -21,6 +21,7 @@
     flex: 1;
     max-width: 100%;
     padding-top: 3%;
+    position: relative;
 }
 
 .gallery__text {
@@ -32,23 +33,24 @@
     margin: 6% 0 3%;
 }
 
-.gallery__figure::before {
+.gallery__img::before {
     content: "";
     width: 59vw;
     height: 1px;
     background-color: var(--grey--1);
     position: absolute;
-    top: 8px;
+    top: 7%;
+    left: 106%;
 }
 
-.gallery__figure::after {
+.gallery__img::after {
     content: "";
     width: 59vw;
     height: 1px;
     background-color: var(--grey--1);
     position: absolute;
-    left: 31.4vw;
-    top: 17.98vh;
+    left: 106%;
+    top: 100%;
 }
 
 

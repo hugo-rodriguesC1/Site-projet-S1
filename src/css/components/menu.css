@@ -46,10 +46,11 @@
 .menu-btn {
   background: none;
   width: 35px;
+  height: 50px;
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  display: flex;
+  display: block;
   align-items: center;
   position: relative;
   }
